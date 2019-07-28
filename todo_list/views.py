@@ -69,6 +69,11 @@ def new(request):
 
 def create(request):
     blog = Blog()
+#     if 'blog.title' in request.GET:
+#         blog.title = request.GET['blog.title']
+#     else:
+#         blog.title = False
+#     blog.title = request.GET['title']
     blog.title = request.GET['title']
     blog.body = request.GET['body']
     blog.pub_date = timezone.datetime.now()
