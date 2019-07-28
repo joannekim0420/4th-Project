@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+{% block content%}
+<body>
+    <form action="{% url 'create' %}">
+        <h4>Title </h4>
+        
+        <input class="form-control mr-sm-2" type="search" placeholder="Add Item" aria-label="Search" name="item" size="50">
+        <br>
+        <h4>Body </h4>
+        <textarea cols=152 rows=15 name="body"></textarea>
+        <br><br>
+        <div style="text-align:right">
+            <input class="btn btn-dark" type="submit" value="submit">
+        </div>
+    </form>
+</body>
+{% endblock%}
